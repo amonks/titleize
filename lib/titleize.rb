@@ -21,7 +21,7 @@ module Titleize
     all_small_words = SMALL_WORDS.dup.concat(add_small_words)
 
     title = title.dup
-    title.downcase! unless title[/[[:lower:]]/]  # assume all-caps need fixing
+    # title.downcase! unless title[/[[:lower:]]/]  # assume all-caps need fixing
 
     phrases(title, add_small_words).map do |phrase|
       words = phrase.split
