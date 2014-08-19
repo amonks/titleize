@@ -94,7 +94,8 @@ class String
   #   "the good german"    # => "The Good German"
   def titleize(add_small_words = [], opts={})
     if defined? ActiveSupport
-      ActiveSupport::Inflector.titleize(self, opts, add_small_words)
+      # ActiveSupport::Inflector.titleize(self, opts, add_small_words)
+      Titleize.titleize(self, add_small_words)
     else
       Titleize.titleize(self, add_small_words)
     end
