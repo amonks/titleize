@@ -4,7 +4,7 @@ require "titleize/version"
 
 Gem::Specification.new do |s|
   s.name        = "titleize"
-  s.version     = "1.3.1"
+-  s.version     = Titleize::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Grant Hollingworth"]
   s.email       = ["grant@antiflux.org"]
